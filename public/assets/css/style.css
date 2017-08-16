@@ -1,0 +1,59 @@
+.home-clock {
+    text-align: center;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:maroon;
+}
+
+.weather-baby {
+    text-align: center;
+    color: maroon;
+}
+
+.fahr {
+    color: black;
+}
+
+.quote-baby {
+    text-align: center;
+    color: darkgray;
+}
+
+.black {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%
+}
+
+#author {
+    display: none;
+}
+
+#quote {
+    display: block;
+    color: darkgray;
+    text-align: center;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-primary {
+    max-width: 300px;
+}
+
+.todo-list {
+    max-width: 300px;
+    text-align: center;
+}
+
+.card {
+    background-color: lightgreen;
+}
+
+.delete-button {
+    text-align: right;
+}

@@ -1,30 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
+
+	<head>
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
-</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+	 crossorigin="anonymous">
+	</head>
 
-<body id="body">
-	<div id="weather">
-		Your Weather Template
+	<body onload="startTime()" id="body" class="imageLoader">
+	<div class="container-fluid">
+
+
+		<div id="image-place">
+
+		</div>
+
+
+		<div class="weather-baby" id="weather">
+
+		</div>
+		<div class="back-image" id="quote">
+
+		</div>
+
+
+		<div id="txt" class="home-clock">
+
+		</div>
+		<div class="card todo-list">
+			<h4>To Do List</h4>
+			<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+				<input name="todo" type="text"><button type="submit">Add</button>
+			</form>
+			<div id="todo">
+
+			</div>
+		</div>
+
 	</div>
-
-	<div id="quote">
-		The Quote
-	</div>
-
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
-	</div>
-
-
 
 
 	<!--JS Libraries-->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<!--Services-->
 	<script src="app/components/weather/weather-service.js"></script>
 	<script src="app/components/image/image-service.js"></script>
@@ -36,9 +56,10 @@
 	<script src="app/components/image/image-controller.js"></script>
 	<script src="app/components/quote/quote-controller.js"></script>
 	<script src="app/components/todo/todo-controller.js"></script>
-
+	<script src="app/components/CLOCK/clock-controller.js"></script>
 	<!--Initialize App-->
 	<script src="app/init.js"></script>
-</body>
+	</body>
+
 
 </html>
