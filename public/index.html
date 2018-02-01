@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
 	 crossorigin="anonymous">
 	</head>
 
@@ -18,18 +18,29 @@
 
 		</div>
 
+		<div class="home-clock">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4"></div>
+				<div id="txt" class="col-xs-4 col-sm-4 col-md-4 card"></div>
+				<div class="col-xs-4 col-sm-4 col-md-4"></div>
+			</div>
 
-		<div class="weather-baby" id="weather">
+		</div>
 
+		<div class="weather-baby">
+			<div class="row">
+				
+				<div class="col-xs-4 col-sm-4 col-md-4"></div>
+				<div id="weather" class="col-xs-4 col-sm-4 col-md-4 card"></div>
+				<div class="col-xs-4 col-sm-4 col-md-4"></div>
+				
+			</div>
 		</div>
 		<div class="back-image" id="quote">
 
 		</div>
 
 
-		<div id="txt" class="home-clock">
-
-		</div>
 		<div class="card todo-list">
 			<h4>To Do List</h4>
 			<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">

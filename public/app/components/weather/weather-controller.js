@@ -11,15 +11,10 @@ function WeatherController() {
 		
 		
 		var template = ""
-		template += `<div class="row">
-		<div class="col-xs-2 col-sm-2">
-		<div class="card card-primary">
-		<div class="card-block">
+		template += `
+		
 		<h4>${weather.name}, ID</h4><h4 class="fahr">${fahrenheit} °F</h4>
-		</div>
-		</div>
-		</div>   
-		</div>`
+		`
 		document.getElementById('weather').innerHTML = template;
 	}
 	getWeather()
